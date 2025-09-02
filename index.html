@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Album</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Page / Album Grid -->
+  <div id="album-list" class="album-grid">
+    <button onclick="openAlbum('dont')">Don’t</button>
+    <button onclick="openAlbum('cry')">Cry</button>
+    <button onclick="openAlbum('anymore')">Anymore</button>
+    <button onclick="openAlbum('yu')">Yu</button>
+  </div>
+
+  <!-- Photo Viewer -->
+  <div id="photo-container" class="hidden">
+    <h2 id="album-title"></h2>
+    <div id="photos" class="photo-grid"></div>
+    <div class="controls">
+      <button id="prev-btn" onclick="prevPage()">Prev</button>
+      <button id="next-btn" onclick="nextPage()">Next</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
