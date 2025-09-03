@@ -35,6 +35,16 @@ body {
   transform: scale(1.02);
 }
 
+/* Sentence under albums */
+.album-note {
+  margin-top: 15px;
+  font-size: 18px;   /* Good for phone screen */
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  grid-column: span 2; /* Makes text span across both columns */
+}
+
 /* Hide Elements */
 .hidden {
   display: none;
