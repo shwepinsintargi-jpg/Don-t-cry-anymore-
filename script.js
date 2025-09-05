@@ -41,6 +41,12 @@ function openAlbum(name) {
   document.getElementById("photo-container").classList.remove("hidden");
   document.getElementById("album-title").innerText = currentAlbum.title;
   showPage();
+
+  // Play music when opening album
+  const music = document.getElementById("bg-music");
+  if (music.paused) {
+    music.play();
+  }
 }
 
 // Show photos page
